@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mysql:
+    image: "mysql:8"
+    network_mode: bridge
+    ports:
+    - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=passwd
+    expose:
+    - "3306"
